@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+<!--http://www.w3schools.com/css/css3_2dtransforms.asp-->
 <html>
     <head>
         <title>Exemplo de Transition</title>
@@ -11,21 +7,25 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <style> 
+        body {
+            background-color: darkcyan;
+            text-align: center;
+        }
+        
             div {
                 width: 100px;
                 height: 100px;
-                background: red;
-                -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* For Safari 3.1 to 6.0 */
-                transition: width 2s, height 2s, transform 2s;
+                background: aquamarine;
+                transition: width 2s, height 2s, transform 2s, background-color 2s;
             }
             div:hover {
                 width: 200px;
                 height: 200px;
-                -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
                 transform: rotate(180deg);
+                background-color:  blue;
             }
         </style>
     <body>
-        <div>Passe o mouse por cima...</div>
+        <div>Girandooooo...</div>
     </body>
 </html>

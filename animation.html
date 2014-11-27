@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--http://www.w3schools.com/css/css3_2dtransforms.asp-->
+<html>
+    <head>
+        <title>Exemplo de Animation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style> 
+        #animada {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            bottom: 400px;
+            left: 50%;
+            -webkit-animation: quicando 3s;
+            animation: quicando 3s;
+            border-radius: 100%;
+            background-image: url(picachu.jpg);
+        }
+        
+        @-webkit-keyframes quicando {
+            
+            0% {bottom: 0px;}
+            10% {bottom: 200px;}
+            20% {bottom: 0px;}
+            40% {bottom: 100px;}
+            55% {bottom: 0px;}
+            70% {bottom: 50px;}
+            78% {bottom: 0px;}
+            86% {bottom: 25px;}
+            90% {bottom: 0px;}
+            95% {bottom: 10px;}
+            100% {bottom: 0px;}
+        }
+ 
+    </style>
+    <body>
+        <div id="animada"></div>
+    </body>
+</html>
